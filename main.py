@@ -1,11 +1,11 @@
 from tareas import GestorTareas
-from estados import GestorEstados
+from estado import GestorEstados
 from menu import Menu
 
 def main():
     # Creamos los objetos principales del programa
     gestor = GestorTareas()
-    estados = GestorEstados()
+    estado = GestorEstados()
     menu = Menu()
 
     # Bucle principal del programa (se repite hasta que el usuario salga)
@@ -24,7 +24,7 @@ def main():
 
         elif opcion == "3":
             # Llamamos al gestor de estados para completar una tarea
-            estados.completar_tarea(gestor)
+            estado.completar_tarea(gestor)
 
         elif opcion == "4":
             # Salimos del programa
